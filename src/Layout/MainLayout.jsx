@@ -10,6 +10,8 @@ import EventDetail from "../pages/EventDetail";
 import ContainerFluid from './ContainerFluid';
 
 import config from '../config.json';
+import MyButton from "../components/MyButton";
+import RegBackgroundComponent from "./RegBackgroundComponent";
 
 export const UserContext = React.createContext();
 
@@ -59,12 +61,26 @@ function MainLayout() {
       .catch((err) => {});
   }, []);
 
+  buttonClicked=()=>{
+
+  }
+
   return (
     <UserContext.Provider value={{ userState: user, userDispatch: dispatch }}>
       {user.isLoading && <Loading />}
       {!user.isLoading && (
         <>
           <NavBar />
+
+          {/* reusable compnenet */}
+          <RegBackgroundComponent >
+            <h1>asdfsdf</h1>
+            <h2>afknsdf</h2>
+          </RegBackgroundComponent>
+
+          {/* reusable button */}
+          <MyButton title="Read More" onClick={buttonClicked}/>
+          
           <ContainerFluid>
             <Switch>
               <Route
