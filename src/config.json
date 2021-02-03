@@ -1,4 +1,4 @@
 {
-    "api":"https://ewent.herokuapp/api/v1/event/all",
+    "api":"https://ewent.herokuapp.com/api/v1/event/all",
    "api2":"http://localhost:3003/api/v1/event/all"
 }
