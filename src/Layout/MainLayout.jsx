@@ -58,11 +58,11 @@ function MainLayout() {
         // setLoading(false);
         dispatch({ type: "post", pld: res.data.events });
       })
-      .catch((err) => {});
+      .catch((err) => { });
   }, []);
 
-  buttonClicked=()=>{
-
+  const buttonClicked = () => {
+    console.log('button clicked')
   }
 
   return (
@@ -79,8 +79,8 @@ function MainLayout() {
           </RegBackgroundComponent>
 
           {/* reusable button */}
-          <MyButton title="Read More" onClick={buttonClicked}/>
-          
+          <MyButton title="Read More" onClick={buttonClicked} />
+
           <ContainerFluid>
             <Switch>
               <Route
