@@ -72,12 +72,6 @@ function MainLayout() {
         <>
           <NavBar />
 
-          {/* reusable compnenet */}
-          <RegBackgroundComponent >
-            <h1>asdfsdf</h1>
-            <h2>afknsdf</h2>
-          </RegBackgroundComponent>
-
           {/* reusable button */}
           <MyButton title="Read More" onClick={buttonClicked} />
 
